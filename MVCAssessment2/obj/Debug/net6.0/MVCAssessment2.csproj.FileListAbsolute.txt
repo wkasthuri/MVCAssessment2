@@ -1,0 +1,356 @@
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\config.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.staticwebassets.runtime.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.exe
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.deps.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.runtimeconfig.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.pdb
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.AssemblyReference.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfoInputs.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfo.cs
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cs
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.MVCAssessment2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.build.MVCAssessment2.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MVCAssessment2.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MVCAssessment2.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\bundle\MVCAssessment2.styles.css
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\projectbundle\MVCAssessment2.bundle.scp.css
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CopyComplete
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\refint\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.pdb
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.genruntimeconfig.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\ref\MVCAssessment2.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.Development.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\config.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.staticwebassets.runtime.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.exe
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.deps.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.runtimeconfig.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.pdb
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Core.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Identity.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Humanizer.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.CodeDom.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Memory.Data.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Json.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.AssemblyReference.cache
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.GeneratedMSBuildEditorConfig.editorconfig
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfoInputs.cache
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfo.cs
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CoreCompileInputs.cache
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.MvcApplicationPartsAssemblyInfo.cache
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cache
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cs
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.MVCAssessment2.Microsoft.AspNetCore.StaticWebAssets.props
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.build.MVCAssessment2.props
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MVCAssessment2.props
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MVCAssessment2.props
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.pack.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.build.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.development.json
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\bundle\MVCAssessment2.styles.css
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\projectbundle\MVCAssessment2.bundle.scp.css
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CopyComplete
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\refint\MVCAssessment2.dll
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.pdb
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.genruntimeconfig.cache
+D:\WK\Holmesglen\Sem2\Implement and use a model viewcontroller framework_ICTPRG556\Ass2\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\ref\MVCAssessment2.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.Development.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\config.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.staticwebassets.runtime.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.exe
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.deps.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.runtimeconfig.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.pdb
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Core.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Identity.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Humanizer.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.CodeDom.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Memory.Data.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Json.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.AssemblyReference.cache
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfoInputs.cache
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfo.cs
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CoreCompileInputs.cache
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.MvcApplicationPartsAssemblyInfo.cache
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cache
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cs
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.MVCAssessment2.Microsoft.AspNetCore.StaticWebAssets.props
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.build.MVCAssessment2.props
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MVCAssessment2.props
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MVCAssessment2.props
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.pack.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.build.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.development.json
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\bundle\MVCAssessment2.styles.css
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\projectbundle\MVCAssessment2.bundle.scp.css
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CopyComplete
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\refint\MVCAssessment2.dll
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.pdb
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.genruntimeconfig.cache
+D:\MVCAssessment2\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\ref\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\appsettings.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\config.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.staticwebassets.runtime.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.exe
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.deps.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.runtimeconfig.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\MVCAssessment2.pdb
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.AssemblyReference.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfoInputs.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.AssemblyInfo.cs
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.RazorAssemblyInfo.cs
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.MVCAssessment2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.build.MVCAssessment2.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MVCAssessment2.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MVCAssessment2.props
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\bundle\MVCAssessment2.styles.css
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\scopedcss\projectbundle\MVCAssessment2.bundle.scp.css
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.csproj.CopyComplete
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\refint\MVCAssessment2.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.pdb
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.genruntimeconfig.cache
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\ref\MVCAssessment2.dll
