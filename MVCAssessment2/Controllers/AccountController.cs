@@ -93,7 +93,7 @@ namespace MVCAssessment2.Controllers
                     ///////////////
 
 
-                    return RedirectToAction("Display", "Post");
+                    return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("", "Invalied Attempt");
             }
