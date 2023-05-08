@@ -1,5 +1,0 @@
-{
-  "EnableDeveloperExceptions": "True",
-  "ConnectionStrings": { "DBConnection": "Server=DESKTOP-TF5S551\\SQLEXPRESS;Database=CSIRO;Integrated Security=True;Encrypt=False" }
-}
-
