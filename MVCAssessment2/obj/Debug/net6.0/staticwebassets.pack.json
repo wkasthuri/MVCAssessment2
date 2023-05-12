@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\wwwroot\\images\\CSIRO_Logo.png",
+      "PackagePath": "staticwebassets\\images\\CSIRO_Logo.png"
+    },
+    {
       "Id": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -93,11 +93,17 @@ namespace MVCAssessment2.Controllers
                     ///////////////
 
 
-                    return RedirectToAction("Display", "Post");
+                    return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("", "Invalied Attempt");
             }
             return View(new LoginViewModel());
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Index()
