@@ -3683,19 +3683,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matt\\.nuget\\packages\\": {}
+    "C:\\Users\\jovmo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\MVCAssessment2.csproj",
+      "projectUniqueName": "C:\\Users\\jovmo\\OneDrive\\Documents\\GitHub\\MVCAssessment2_wasanthi_repo\\MVCAssessment2\\MVCAssessment2.csproj",
       "projectName": "MVCAssessment2",
-      "projectPath": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\MVCAssessment2.csproj",
-      "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\obj\\",
+      "projectPath": "C:\\Users\\jovmo\\OneDrive\\Documents\\GitHub\\MVCAssessment2_wasanthi_repo\\MVCAssessment2\\MVCAssessment2.csproj",
+      "packagesPath": "C:\\Users\\jovmo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jovmo\\OneDrive\\Documents\\GitHub\\MVCAssessment2_wasanthi_repo\\MVCAssessment2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jovmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3755,7 +3755,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
