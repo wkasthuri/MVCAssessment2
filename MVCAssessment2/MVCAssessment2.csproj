@@ -17,6 +17,11 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="Views\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\CSIRO_Logo.png" />
   </ItemGroup>
 
 </Project>
