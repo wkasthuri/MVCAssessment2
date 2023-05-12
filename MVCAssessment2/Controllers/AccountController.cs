@@ -100,6 +100,12 @@ namespace MVCAssessment2.Controllers
             return View(new LoginViewModel());
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
         public IActionResult Index()
         {
             return View();

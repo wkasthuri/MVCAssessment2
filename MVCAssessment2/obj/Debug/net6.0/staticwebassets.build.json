@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rr+F2iqk2zIJW3BnOV/9ZFiW7xK6CUMxj3bqo7rZV0g=",
+  "Hash": "0yZTGBh+AdLOjE68dbj1oF++zPn0jWEHq5Kbgh6irUE=",
   "Source": "MVCAssessment2",
   "BasePath": "_content/MVCAssessment2",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\wwwroot\\images\\CSIRO_Logo.png",
+      "SourceId": "MVCAssessment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\wwwroot\\",
+      "BasePath": "_content/MVCAssessment2",
+      "RelativePath": "images/CSIRO_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\CSIRO_Logo.png"
     },
     {
       "Identity": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\wwwroot\\js\\site.js",
