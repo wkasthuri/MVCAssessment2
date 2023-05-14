@@ -16,7 +16,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CSIROContext>(options =>
 //builder.Services.AddDbContext<ApplicantDataContext>(options =>
 {
-    var connectionString = configuration.GetConnectionString("DBConnection");
+    //var connectionString = configuration.GetConnectionString("DBConnection");
+    var connectionString = "Server=ASUS-TUF-F15\\SQLEXPRESS;Database=CSIRO;Uid=sa; Password=jordan23;Encrypt=False";
     options.UseSqlServer(connectionString);
 });
 
@@ -59,8 +60,8 @@ app.MapControllerRoute(
     name: "default",
     //pattern: "{controller=Home}/{action=Index}/{id?}");
     //pattern: "{controller=Applicant}/{action=Display}/{id?}");
-    pattern: "{controller=Account}/{action=Register}/{id?}");
-    //pattern: "{controller=Account}/{action=Login}/{id?}");
+    //pattern: "{controller=Account}/{action=Register}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
     //pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
     //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
