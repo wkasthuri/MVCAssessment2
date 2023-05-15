@@ -13,5 +13,15 @@ namespace MVCAssessment2.Controllers
         {
             return View();
         }
+
+        public IActionResult Successful()
+        {
+            return View();
+        }
+
+        public IActionResult Unsuccessful()
+        {
+            return View();
+        }
     }
 }
