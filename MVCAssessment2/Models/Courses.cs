@@ -7,6 +7,7 @@ namespace MVCAssessment2.Models
         [Key]
         public int courseID { get; set; }
 
+        [Display(Name = "Course")]
         public string courseName { get; set; }
     }
 }

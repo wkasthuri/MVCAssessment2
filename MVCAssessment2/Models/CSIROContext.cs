@@ -8,6 +8,12 @@ namespace MVCAssessment2.Models
     {
         public DbSet<Applicant> applicant { get; set; }
 
+        public DbSet<Courses> courses { get; set; }
+
+        public DbSet<Universities> universities { get; set; }
+
+        public DbSet<AspNetUsers> aspNetUsers { get; set; }
+
         public CSIROContext(DbContextOptions<CSIROContext> options): base(options)
         {
             Database.EnsureCreated();
