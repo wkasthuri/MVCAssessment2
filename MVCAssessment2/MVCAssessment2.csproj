@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\jovan_styles.css" />
     <None Include="wwwroot\images\CSIRO_Logo.png" />
   </ItemGroup>
 

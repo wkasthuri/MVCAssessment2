@@ -1,5 +1,5 @@
 {
   "EnableDeveloperExceptions": "True",
-  "ConnectionStrings": { "DBConnection": "Server=DESKTOP-A7J167C;Database=CSIRO;Integrated Security=True;Encrypt=False" }
+  "ConnectionStrings": { "DBConnection": "Server=ASUS-TUF-F15\\SQLEXPRESS;Database=CSIRO;Uid=sa;Password=jordan23;Encrypt=False" }
 }
 
