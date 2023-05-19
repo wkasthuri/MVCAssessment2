@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVCAssessment2.Models;
+using System.Data;
 
 namespace MVCAssessment2.Controllers
 {
@@ -18,7 +20,7 @@ namespace MVCAssessment2.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Display(AspNetUsers aspNetUsers)
         {
             var aArr = from v1 in _db.applicant
