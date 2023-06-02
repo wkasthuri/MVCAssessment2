@@ -2,4 +2,3 @@
   "EnableDeveloperExceptions": "True",
   "ConnectionStrings": { "DBConnection": "Server=DESKTOP-A7J167C;Database=CSIRO;Integrated Security=True;Encrypt=False" }
 }
-

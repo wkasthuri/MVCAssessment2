@@ -1,5 +1,52 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model MVCAssessment2.ViewModels.ApplicantViewModel
+
+<div class="row justify-content-center my-3">
+
+    <div class="col-md-8 border rounded">
+
+        <h3 class="text-center m-2">Looking for a job in Machine Learning and Data Science? CSIRO is hiring now!</h3>
+
+        <div class="my-4 tex-center">
+            <p class="text-center">CSIRO is one of the popular research organizations in Australia. 
+                The organization would like to hire competent candidates for research work using Machine Learning and Data Science. 
+                The research is related to the causality rate caused by the vaccination of COVID-19 in Australia.</p>
+
+            <p class="text-center fw-bold">All Candidates must meet the following Criteria:</p>
+            <p class="text-center">• Must have studied at a top 100 ranked University</p>
+            <p class="text-center">• Must have studied one of the following fields, Masters of Data Science,
+                Masters of Ai or Masters of Information Technology</p>
+            <p class="text-center">• Must have a GPA of 3.0 or greater</p>
+        </div>
+
+            <form method="POST">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <label asp-for="firstName">First Name</label>
+                <input asp-for="firstName" class="form-control" />
+
+                <label asp-for="lastName">Last Name</label>
+                <input asp-for="lastName" class="form-control" />
+
+                <label asp-for="dateOfBirth">Date Of Birth</label>
+                <input asp-for="dateOfBirth" class="form-control" />
+
+                <label asp-for="gpa">GPA</label>
+                <input asp-for="gpa" class="form-control" />
+
+                <label asp-for="courseID">Qualification</label>
+                <select asp-for="courseID" class="form-select" asp-items="Model.courseSelectList"></select>
+
+                <label asp-for="uniID">University</label>
+                <select asp-for="uniID" class="form-select" asp-items="Model.uniSelectList"></select>
+
+                <label asp-for="coverLetter">Cover Letter (Optional)</label>
+                <textarea asp-for="coverLetter" rows="5" class="form-control"></textarea>
+
+                <div class="mx-auto" style="width: 200px">
+                    <button type="submit" class="btn btn-primary my-2">Submit Application</button>
+                </div>
+            </form>
+
+    </div>
+
+</div>

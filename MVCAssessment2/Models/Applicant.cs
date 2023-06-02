@@ -5,7 +5,7 @@ namespace MVCAssessment2.Models
     public class Applicant
     {
         [Key]
-        public string applicantID { get; set; }
+        public int? applicantID { get; set; }
 
         [Display(Name = "First Name")]
         public string firstName { get; set; }
@@ -26,8 +26,8 @@ namespace MVCAssessment2.Models
 
         public int courseID { get; set; }
 
-        public int appID { get; set; }
+        public string? coverLetter { get; set; }
 
-        public string Id { get; set; }
+        public string? Id { get; set; }
     }
 }
