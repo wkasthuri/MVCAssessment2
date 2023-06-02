@@ -61,10 +61,11 @@ app.MapControllerRoute(
     name: "default",
     //pattern: "{controller=Home}/{action=Index}/{id?}");
 
-    //pattern: "{controller=Applicant}/{action=Display}/{id?}");
-
+    //pattern: "{controller=Applicant}/{action=Display}");
+    pattern: "{controller=Applicant}/{action=Display}/{id?}");
+    
     //pattern: "{controller=Account}/{action=Register}/{id?}");
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    //pattern: "{controller=Account}/{action=Login}/{id?}");
 
     //pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
     //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
