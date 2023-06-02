@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MVCAssessment2.Models;
+using MVCAssessment2.ViewModels;
 
 namespace MVCAssessment2.Controllers
 {
@@ -7,16 +10,181 @@ namespace MVCAssessment2.Controllers
     {
         public Applicant a { get; set; }
 
+        private UserManager<IdentityUser> userManager { get; }
+
         private readonly CSIROContext _db;
 
-        public ApplicantController(CSIROContext db)
+        public ApplicantController(CSIROContext db, UserManager<IdentityUser> _userManager)
         {
             _db = db;
+            this.userManager = _userManager;
         }
 
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Add()
+        {
+            ApplicantViewModel fillApplication = new ApplicantViewModel();
+            fillApplication = PopulateDropDownList();
+
+            // Pass the view model to the view
+            return View(fillApplication);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Add(ApplicantViewModel applicant)
+        {
+            ApplicantViewModel fillApplication = new ApplicantViewModel();
+            fillApplication = PopulateDropDownList();
+
+            // Get the currently logged in users email
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+            Console.WriteLine(user.Id);
+            applicant.Id = user.Id;
+
+            // Check that the data being submitted is valid
+            if (!ModelState.IsValid) return View(fillApplication);
+
+
+            _db.applicant.Add(applicant);
+            _db.SaveChanges();
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string applicantID)
+        {
+            var userApplicant = from applicant in _db.applicant
+                                join user in _db.aspNetUsers on applicant.Id equals user.Id
+                                select new
+                                {
+                                    applicantID = applicant.applicantID,
+                                    firstName = applicant.firstName,
+                                    lastName = applicant.lastName,
+                                    dateOfBirth = applicant.dateOfBirth,
+                                    gpa = applicant.gpa,
+                                    courseID = applicant.courseID,
+                                    uniID = applicant.uniID,
+                                    Id = user.Id,
+                                    Email = user.Email
+                                };
+
+            EditApplicantViewModel applicantDetails = new EditApplicantViewModel();
+
+            applicantDetails = PopulateEditDropDownList();
+
+            foreach(var editApplicant in userApplicant)
+            {
+                applicantDetails.applicantID = editApplicant.applicantID;
+                applicantDetails.firstName = editApplicant.firstName;
+                applicantDetails.lastName = editApplicant.lastName;
+                applicantDetails.dateOfBirth = editApplicant.dateOfBirth;
+                applicantDetails.gpa = editApplicant.gpa;
+                applicantDetails.courseID = editApplicant.courseID;
+                applicantDetails.uniID = editApplicant.uniID;
+                applicantDetails.Id = editApplicant.Id;
+                applicantDetails.Email = editApplicant.Email;
+            }
+
+            return View(applicantDetails);
+        }
+
+        public async Task<IActionResult> Edit(EditApplicantViewModel applicant)
+        {
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+            applicant.Id = user.Id;
+
+            Console.WriteLine("Logging applicants userID: " + applicant.Id);
+            
+            _db.applicant.Update(applicant);
+            //_db.Entry(applicant).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _db.SaveChanges();
+            return RedirectToAction("Display");
+        }
+
+        public ApplicantViewModel PopulateDropDownList()
+        {
+            // Fetch course data from db
+            var courses = from course in _db.courses
+                          select new
+                          {
+                              courseID = course.courseID,
+                              courseName = course.courseName
+                          };
+
+            var universities = from university in _db.universities
+                               select new
+                               {
+                                   uniID = university.uniID,
+                                   uniName = university.universityName,
+                               };
+
+            // Init fillViewModel for autofill and dropdowns
+            var fillApplication = new ApplicantViewModel();
+
+            // Init the course dropdown list
+            fillApplication.courseSelectList = new List<SelectListItem>();
+            // Init the university dropdown list
+            fillApplication.uniSelectList = new List<SelectListItem>();
+
+            // Loop through the course and add them to the viewmodel
+            foreach (var course in courses)
+            {
+                fillApplication.courseSelectList.Add(new SelectListItem { Text = course.courseName, Value = course.courseID.ToString() });
+            }
+
+            // Loop through the universitys results and add them to the viewmodel
+            foreach (var uni in universities)
+            {
+                fillApplication.uniSelectList.Add(new SelectListItem { Text = uni.uniName, Value = uni.uniID.ToString() });
+            }
+
+            return fillApplication;
+        }
+
+        public EditApplicantViewModel PopulateEditDropDownList()
+        {
+            // Fetch course data from db
+            var courses = from course in _db.courses
+                          select new
+                          {
+                              courseID = course.courseID,
+                              courseName = course.courseName
+                          };
+
+            var universities = from university in _db.universities
+                               select new
+                               {
+                                   uniID = university.uniID,
+                                   uniName = university.universityName,
+                               };
+
+            // Init fillViewModel for autofill and dropdowns
+            var fillApplication = new EditApplicantViewModel();
+
+            // Init the course dropdown list
+            fillApplication.courseSelectList = new List<SelectListItem>();
+            // Init the university dropdown list
+            fillApplication.uniSelectList = new List<SelectListItem>();
+
+            // Loop through the course and add them to the viewmodel
+            foreach (var course in courses)
+            {
+                fillApplication.courseSelectList.Add(new SelectListItem { Text = course.courseName, Value = course.courseID.ToString() });
+            }
+
+            // Loop through the universitys results and add them to the viewmodel
+            foreach (var uni in universities)
+            {
+                fillApplication.uniSelectList.Add(new SelectListItem { Text = uni.uniName, Value = uni.uniID.ToString() });
+            }
+
+            return fillApplication;
         }
 
         public IActionResult Display(AspNetUsers aspNetUsers)
@@ -53,5 +221,6 @@ namespace MVCAssessment2.Controllers
             }
             return View(cList);
         }
+        
     }
 }

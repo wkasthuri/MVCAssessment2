@@ -11,7 +11,7 @@
 <body>
     <header class="border-bottom">
         <div class="container-xl ">
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light box-shadow">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
                 <div class="container-fluid">
                     <img src="~/images/csiro_logo.png" asp-append-version="true" style="height:60px; width:60px" />
                     <a class="navbar-brand ps-3" asp-area="" asp-controller="Home" asp-action="Index">CSIRO</a>
@@ -22,7 +22,7 @@
                     <div class="navbar-collapse collapse justify-content-end">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Apply Now!</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Add">Apply Now!</a>
                             </li>
                             @if(User.Identity.IsAuthenticated)
                             {
