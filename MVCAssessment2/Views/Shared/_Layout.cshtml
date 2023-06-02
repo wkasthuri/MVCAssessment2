@@ -21,9 +21,18 @@
                     </button>
                     <div class="navbar-collapse collapse justify-content-end">
                         <ul class="navbar-nav">
+                            @if (User.IsInRole("applicant"))
+                            {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Add">Apply Now!</a>
                             </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Display">Applicants</a>
+                                </li>
+                            }
                             @if(User.Identity.IsAuthenticated)
                             {
                             <li class="nav-item">

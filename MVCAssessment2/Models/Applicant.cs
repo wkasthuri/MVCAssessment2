@@ -22,10 +22,13 @@ namespace MVCAssessment2.Models
         [Display(Name = "GPA")]
         public double gpa { get; set; }
 
+        [Display(Name = "University Name")]
         public int uniID { get; set; }
 
+        [Display(Name = "Course Name")]
         public int courseID { get; set; }
 
+        [Display(Name = "Cover Letter (Optional)")]
         public string? coverLetter { get; set; }
 
         public string? Id { get; set; }

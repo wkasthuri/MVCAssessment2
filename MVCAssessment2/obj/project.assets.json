@@ -3683,26 +3683,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matt\\.nuget\\packages\\": {}
+    "C:\\Users\\wk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\MVCAssessment2.csproj",
+      "projectUniqueName": "D:\\MVC_project\\MVCAssessment2\\MVCAssessment2\\MVCAssessment2.csproj",
       "projectName": "MVCAssessment2",
-      "projectPath": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\MVCAssessment2.csproj",
-      "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matt\\Desktop\\School\\Diploma\\Implement a MVC\\Assessment 2\\MVCAssessment\\MVCAssessment2\\MVCAssessment2\\obj\\",
+      "projectPath": "D:\\MVC_project\\MVCAssessment2\\MVCAssessment2\\MVCAssessment2.csproj",
+      "packagesPath": "C:\\Users\\wk\\.nuget\\packages\\",
+      "outputPath": "D:\\MVC_project\\MVCAssessment2\\MVCAssessment2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\wk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3755,7 +3764,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
