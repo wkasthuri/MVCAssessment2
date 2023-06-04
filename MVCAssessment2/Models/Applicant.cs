@@ -6,8 +6,7 @@ namespace MVCAssessment2.Models
     public class Applicant
     {
         [Key]
-        
-        public int applicantID { get; set; }
+        public int? applicantID { get; set; }
 
         [Display(Name = "First Name")]
         public string firstName { get; set; }

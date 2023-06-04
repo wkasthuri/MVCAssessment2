@@ -8,6 +8,5 @@ namespace MVCAssessment2.Models
         public int uniID { get; set; }
 
         public string universityName { get; set; }
-        
     }
 }

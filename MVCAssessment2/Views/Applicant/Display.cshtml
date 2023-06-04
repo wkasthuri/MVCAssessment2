@@ -1,6 +1,12 @@
 ﻿@model IEnumerable<MVCAssessment2.Models.Combined>
 
+<<<<<<< HEAD
 <table class="table table-striped border="1">
+=======
+
+
+<table class="table table-striped border="1"
+>>>>>>> main
 <tr>
    
     <th>@Html.DisplayNameFor(m=>m.applicant.firstName)</th>
@@ -25,11 +31,20 @@
                         <td>@v.universities.universityName</td>
                         <td>@v.courses.courseName</td>
                         <td>@v.applicant.gpa</td>
+<<<<<<< HEAD
                         <td>@v.applicant.coverLetter</td>
+=======
+                        <td>@Html.ActionLink("Edit", "Edit", "Applicant", new{@id= v.applicant.applicantID})</td>
+>>>>>>> main
 
                         <td>@Html.ActionLink("Edit", "Edit", "Applicant", new {@id= v.applicant.applicantID })</td>
            
                     </tr>
     }
 
+<<<<<<< HEAD
 </table>
+=======
+
+</table>
+>>>>>>> main

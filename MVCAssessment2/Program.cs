@@ -70,7 +70,6 @@ app.MapControllerRoute(
     //pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
     //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
-    //pattern: "{controller=Application}/{action=Application}/{id?}");
     //pattern: "{controller=Application}/{action=Successful}/{id?}");
 
 app.Run();
