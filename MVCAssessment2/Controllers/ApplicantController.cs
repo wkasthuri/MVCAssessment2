@@ -64,63 +64,6 @@ namespace MVCAssessment2.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        // GET Edit for when an Applicant wants to edit there application
-        [HttpGet]
-        public async Task<IActionResult> Edit()
-        {
-            var user = await userManager.FindByNameAsync(User.Identity.Name);
-
-
-            var userApplicant = from applicant in _db.applicant
-                                where applicant.Id == user.Id
-                                select new
-                                {
-                                    applicantID = applicant.applicantID,
-                                    firstName = applicant.firstName,
-                                    lastName = applicant.lastName,
-                                    dateOfBirth = applicant.dateOfBirth,
-                                    gpa = applicant.gpa,
-                                    courseID = applicant.courseID,
-                                    uniID = applicant.uniID,
-                                    Id = user.Id,
-                                    Email = user.Email
-                                };
-
-            EditApplicantViewModel applicantDetails = new EditApplicantViewModel();
-
-            applicantDetails.PopulateDropDownList(_db);
-
-            foreach (var editApplicant in userApplicant)
-            {
-                applicantDetails.applicantID = editApplicant.applicantID;
-                applicantDetails.firstName = editApplicant.firstName;
-                applicantDetails.lastName = editApplicant.lastName;
-                applicantDetails.dateOfBirth = editApplicant.dateOfBirth;
-                applicantDetails.gpa = editApplicant.gpa;
-                applicantDetails.courseID = editApplicant.courseID;
-                applicantDetails.uniID = editApplicant.uniID;
-                applicantDetails.Id = editApplicant.Id;
-                applicantDetails.Email = editApplicant.Email;
-            }
-
-            return View(applicantDetails);
-        }
-
-        // POST Edit for when an Applicant wants to edit there application
-        [HttpPost]
-        public async Task<IActionResult> Edit(EditApplicantViewModel applicant)
-        {
-            var user = await userManager.FindByNameAsync(User.Identity.Name);
-            applicant.Id = user.Id;
-
-            Console.WriteLine("Logging applicants userID: " + applicant.Id);
-            
-            _db.applicant.Update(applicant);
-            //_db.Entry(applicant).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            _db.SaveChanges();
-            return RedirectToAction("Index", "Home");
-        }
-
 
         // GET Display for Displaying all applicant to the Administrator
         [HttpGet]
