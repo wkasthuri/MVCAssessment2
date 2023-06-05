@@ -13,5 +13,7 @@ namespace MVCAssessment2.ViewModels
         public List<SelectListItem>? uniSelectList { get; set; }
        
         public string Email { get; set; }
+
+        public string PhoneNumber { get; set; }
     }
 }

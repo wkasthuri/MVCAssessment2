@@ -23,6 +23,7 @@ namespace MVCAssessment2.Models
 
         public string ConcurrencyStamp { get; set; }
 
+        [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 
         public bool PhoneNumberConfirmed { get; set; }
