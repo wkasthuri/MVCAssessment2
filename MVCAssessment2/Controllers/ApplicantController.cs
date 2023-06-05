@@ -53,6 +53,10 @@ namespace MVCAssessment2.Controllers
 
             // Get the currently logged in users email
             var user = await userManager.FindByNameAsync(User.Identity.Name);
+
+            user.PhoneNumber = applicant.PhoneNumber;
+            await userManager.UpdateAsync(user);
+
             Console.WriteLine(user.Id);
             applicant.Id = user.Id;
 
@@ -68,7 +72,7 @@ namespace MVCAssessment2.Controllers
 
         // GET Display for Displaying all applicant to the Administrator
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Display()
         {
             var aArr = from v1 in _db.applicant

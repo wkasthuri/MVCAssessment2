@@ -66,7 +66,7 @@ app.MapControllerRoute(
     //pattern: "{controller=Applicant}/{action=Delete}/{id?}");
 
     //pattern: "{controller=Account}/{action=Register}/{id?}");
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Account}/{action=Login}");
 
     //pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
     //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");

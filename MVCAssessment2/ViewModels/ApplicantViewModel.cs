@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MVCAssessment2.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVCAssessment2.ViewModels
 {
@@ -11,6 +12,9 @@ namespace MVCAssessment2.ViewModels
 
         // Uni dropdown
         public List<SelectListItem>? uniSelectList { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
 
 
         public ApplicantViewModel PopulateDropDownList(CSIROContext _db)
