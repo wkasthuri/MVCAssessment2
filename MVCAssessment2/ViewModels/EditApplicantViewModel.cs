@@ -14,6 +14,7 @@ namespace MVCAssessment2.ViewModels
        
         public string Email { get; set; }
 
+<<<<<<< HEAD
         public EditApplicantViewModel PopulateDropDownList(CSIROContext _db)
         {
             // Fetch course data from db
@@ -50,5 +51,8 @@ namespace MVCAssessment2.ViewModels
 
             return this;
         }
+=======
+        public string PhoneNumber { get; set; }
+>>>>>>> main
     }
 }
