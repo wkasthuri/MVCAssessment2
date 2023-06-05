@@ -31,7 +31,7 @@ namespace MVCAssessment2.Controllers
         {
             return View();
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> Add()
         {
@@ -63,6 +63,7 @@ namespace MVCAssessment2.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        
         [HttpGet]
         public async Task<IActionResult> Edit(string applicantID)
         {
@@ -194,7 +195,8 @@ namespace MVCAssessment2.Controllers
             return fillApplication;
         }
 
-        public IActionResult Display(AspNetUsers aspNetUsers)
+        [HttpGet]
+        public IActionResult Display()
         {
             var aArr = from v1 in _db.applicant
                        join v2 in _db.courses on v1.courseID equals v2.courseID
@@ -223,18 +225,17 @@ namespace MVCAssessment2.Controllers
 
             foreach (var a in aArr)
             {
-                Applicant a1 = new Applicant { applicantID= a.applicantID, firstName = a.firstName, lastName = a.lastName, dateOfBirth = a.dateOfBirth, gpa = a.gpa, coverLetter = a.coverLetter };
-                Courses r1 = new Courses { courseID= a.courseID, courseName = a.courseName };
-                Universities u1 = new Universities { uniID=a.uniID, universityName = a.universityName };
-                AspNetUsers n1 = new AspNetUsers { Id=a.Id, Email = a.Email };
+                Applicant a1 = new Applicant { applicantID = a.applicantID, firstName = a.firstName, lastName = a.lastName, dateOfBirth = a.dateOfBirth, gpa = a.gpa, coverLetter = a.coverLetter };
+                Courses r1 = new Courses { courseID = a.courseID, courseName = a.courseName };
+                Universities u1 = new Universities { uniID = a.uniID, universityName = a.universityName };
+                AspNetUsers n1 = new AspNetUsers { Id = a.Id, Email = a.Email };
                 Combined c = new Combined { applicant = a1, courses = r1, universities = u1, aspNetUsers = n1 };
 
                 cList.Add(c);
             }
             Console.WriteLine("test");
             return View(cList);
-           
         }
-        
+
     }
 }

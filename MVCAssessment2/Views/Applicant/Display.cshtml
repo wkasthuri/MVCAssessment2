@@ -1,50 +1,32 @@
 ﻿@model IEnumerable<MVCAssessment2.Models.Combined>
 
-<<<<<<< HEAD
 <table class="table table-striped border="1">
-=======
-
-
-<table class="table table-striped border="1"
->>>>>>> main
-<tr>
-   
-    <th>@Html.DisplayNameFor(m=>m.applicant.firstName)</th>
-    <th>@Html.DisplayNameFor(m=>m.applicant.lastName)</th>
-    <th>@Html.DisplayNameFor(m=>m.applicant.dateOfBirth)</th>
-    <th>@Html.DisplayNameFor(m=>m.aspNetUsers.Email)</th>
-    <th>@Html.DisplayNameFor(m=>m.universities.universityName)</th>
-    <th>@Html.DisplayNameFor(m=>m.courses.courseName)</th>
-    <th>@Html.DisplayNameFor(m=>m.applicant.gpa)</th>
-    <th>@Html.DisplayNameFor(m=>m.applicant.coverLetter)</th>
-
-</tr>
+    <tr>
+        <th>@Html.DisplayNameFor(m=>m.applicant.firstName)</th>
+        <th>@Html.DisplayNameFor(m=>m.applicant.lastName)</th>
+        <th>@Html.DisplayNameFor(m=>m.applicant.dateOfBirth)</th>
+        <th>@Html.DisplayNameFor(m=>m.aspNetUsers.Email)</th>
+        <th>@Html.DisplayNameFor(m=>m.universities.universityName)</th>
+        <th>@Html.DisplayNameFor(m=>m.courses.courseName)</th>
+        <th>@Html.DisplayNameFor(m=>m.applicant.gpa)</th>
+        <th>@Html.DisplayNameFor(m=>m.applicant.coverLetter)</th>
+    </tr>
 
     @foreach (var v in Model)
     {
-                    <tr>
-                      
-                        <td>@v.applicant.firstName</td>
-                        <td>@v.applicant.lastName</td>
-                        <td>@v.applicant.dateOfBirth</td>
-                        <td>@v.aspNetUsers.Email</td>
-                        <td>@v.universities.universityName</td>
-                        <td>@v.courses.courseName</td>
-                        <td>@v.applicant.gpa</td>
-<<<<<<< HEAD
-                        <td>@v.applicant.coverLetter</td>
-=======
-                        <td>@Html.ActionLink("Edit", "Edit", "Applicant", new{@id= v.applicant.applicantID})</td>
->>>>>>> main
+        <tr>
 
-                        <td>@Html.ActionLink("Edit", "Edit", "Applicant", new {@id= v.applicant.applicantID })</td>
-           
-                    </tr>
+            <td>@v.applicant.firstName</td>
+            <td>@v.applicant.lastName</td>
+            <td>@v.applicant.dateOfBirth</td>
+            <td>@v.aspNetUsers.Email</td>
+            <td>@v.universities.universityName</td>
+            <td>@v.courses.courseName</td>
+            <td>@v.applicant.gpa</td>
+            <td>@v.applicant.coverLetter</td>
+
+            <td>@Html.ActionLink("Edit", "Edit", "Applicant", new {@id= v.applicant.applicantID })</td>
+
+        </tr>
     }
-
-<<<<<<< HEAD
 </table>
-=======
-
-</table>
->>>>>>> main
