@@ -21,29 +21,33 @@
                     </button>
                     <div class="navbar-collapse collapse justify-content-end">
                         <ul class="navbar-nav">
-
-                            @if (User.IsInRole("applicant"))
+          
+                            @if (User.IsInRole("Admin"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Apply Now!</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Display">Applicants</a>
                                 </li>
                             } else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Display">Applicants</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Add">Apply Now!</a>
                                 </li>
                             }
 
                             @if(User.Identity.IsAuthenticated)
                             {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Sign Out</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Sign Out</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Edit">Profile</a>
+                                </li>
                             } else
                             {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Sign In</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Sign In</a>
+                                </li>
                             }
                             
                         </ul>

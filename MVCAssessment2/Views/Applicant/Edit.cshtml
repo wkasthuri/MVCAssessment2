@@ -10,17 +10,17 @@
             <tr><td>@Html.LabelFor(m => m.firstName)</td><td>@Html.EditorFor(m => m.firstName)</td><td></td></tr>
             <tr><td>@Html.LabelFor(m => m.lastName)</td><td>@Html.EditorFor(m => m.lastName)</td><td></td></tr>
             <tr><td>@Html.LabelFor(m => m.dateOfBirth)</td><td>@Html.EditorFor(m => m.dateOfBirth)</td><td></td></tr>
-            <tr><td>@Html.LabelFor(m => m.Email)</td><td>@Html.EditorFor(m => m.Email)</td><td>@Html.ValidationMessageFor(m => m.Email)</td></tr>
+            <tr><td>@Html.LabelFor(m => m.Email)</td><td>@Model.Email</td></tr>
 
             <tr>
                 <td>@Html.LabelFor(m => m.uniID)</td>
-                <td>@Html.DropDownListFor(m => m.uniID, new SelectList(Model.uniSelectList, "Value", "Text", Model.uniID), "Select country", new{@id="uniID"})</td>
+                <td>@Html.DropDownListFor(m => m.uniID, new SelectList(Model.uniSelectList, "Value", "Text", Model.uniID), "Select University", new{@id="uniID"})</td>
                 <td></td>
             </tr>
 
             <tr>
                 <td>@Html.LabelFor(m => m.courseID)</td>
-                <td>@Html.DropDownListFor(m => m.courseID, new SelectList(Model.courseSelectList, "Value", "Text", Model.courseID), "Select country", new{@id="courseID"})</td>
+                <td>@Html.DropDownListFor(m => m.courseID, new SelectList(Model.courseSelectList, "Value", "Text", Model.courseID), "Select Qualification", new{@id="courseID"})</td>
                 <td></td>
             </tr>
 

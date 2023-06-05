@@ -11,6 +11,7 @@ using System.Data;
 
 namespace MVCAssessment2.Controllers
 {
+    [Authorize]
     public class ApplicantController : Controller
     {
         //public Applicant a { get; set; }
@@ -31,23 +32,29 @@ namespace MVCAssessment2.Controllers
         {
             return View();
         }
-        
+
+
+        // GET Add for when a User submits an application
         [HttpGet]
-        public async Task<IActionResult> Add()
+        public IActionResult Add()
         {
+            // Init ViewModel
             ApplicantViewModel fillApplication = new ApplicantViewModel();
-            fillApplication = PopulateDropDownList();
+            // Populate the University and Courses dropdown lists
+            fillApplication.PopulateDropDownList(_db);
 
             // Pass the view model to the view
             return View(fillApplication);
         }
 
-
+        // Post Add for when a User submits an application
         [HttpPost]
         public async Task<IActionResult> Add(ApplicantViewModel applicant)
         {
+            // Init ViewModel
             ApplicantViewModel fillApplication = new ApplicantViewModel();
-            fillApplication = PopulateDropDownList();
+            // Populate the University and Courses dropdown lists
+            fillApplication.PopulateDropDownList(_db);
 
             // Get the currently logged in users email
             var user = await userManager.FindByNameAsync(User.Identity.Name);
@@ -63,12 +70,15 @@ namespace MVCAssessment2.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        
+        // GET Edit for when an Applicant wants to edit there application
         [HttpGet]
-        public async Task<IActionResult> Edit(string applicantID)
+        public async Task<IActionResult> Edit()
         {
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+
+
             var userApplicant = from applicant in _db.applicant
-                                join user in _db.aspNetUsers on applicant.Id equals user.Id
+                                where applicant.Id == user.Id
                                 select new
                                 {
                                     applicantID = applicant.applicantID,
@@ -84,9 +94,9 @@ namespace MVCAssessment2.Controllers
 
             EditApplicantViewModel applicantDetails = new EditApplicantViewModel();
 
-            applicantDetails = PopulateEditDropDownList();
+            applicantDetails.PopulateDropDownList(_db);
 
-            foreach(var editApplicant in userApplicant)
+            foreach (var editApplicant in userApplicant)
             {
                 applicantDetails.applicantID = editApplicant.applicantID;
                 applicantDetails.firstName = editApplicant.firstName;
@@ -102,6 +112,8 @@ namespace MVCAssessment2.Controllers
             return View(applicantDetails);
         }
 
+        // POST Edit for when an Applicant wants to edit there application
+        [HttpPost]
         public async Task<IActionResult> Edit(EditApplicantViewModel applicant)
         {
             var user = await userManager.FindByNameAsync(User.Identity.Name);
@@ -112,90 +124,12 @@ namespace MVCAssessment2.Controllers
             _db.applicant.Update(applicant);
             //_db.Entry(applicant).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             _db.SaveChanges();
-            return RedirectToAction("Display");
+            return RedirectToAction("Index", "Home");
         }
 
-        public ApplicantViewModel PopulateDropDownList()
-        {
-            // Fetch course data from db
-            var courses = from course in _db.courses
-                          select new
-                          {
-                              courseID = course.courseID,
-                              courseName = course.courseName
-                          };
-
-            var universities = from university in _db.universities
-                               select new
-                               {
-                                   uniID = university.uniID,
-                                   uniName = university.universityName,
-                               };
-
-            // Init fillViewModel for autofill and dropdowns
-            var fillApplication = new ApplicantViewModel();
-
-            // Init the course dropdown list
-            fillApplication.courseSelectList = new List<SelectListItem>();
-            // Init the university dropdown list
-            fillApplication.uniSelectList = new List<SelectListItem>();
-
-            // Loop through the course and add them to the viewmodel
-            foreach (var course in courses)
-            {
-                fillApplication.courseSelectList.Add(new SelectListItem { Text = course.courseName, Value = course.courseID.ToString() });
-            }
-
-            // Loop through the universitys results and add them to the viewmodel
-            foreach (var uni in universities)
-            {
-                fillApplication.uniSelectList.Add(new SelectListItem { Text = uni.uniName, Value = uni.uniID.ToString() });
-            }
-
-            return fillApplication;
-        }
-
-        public EditApplicantViewModel PopulateEditDropDownList()
-        {
-            // Fetch course data from db
-            var courses = from course in _db.courses
-                          select new
-                          {
-                              courseID = course.courseID,
-                              courseName = course.courseName
-                          };
-
-            var universities = from university in _db.universities
-                               select new
-                               {
-                                   uniID = university.uniID,
-                                   uniName = university.universityName,
-                               };
-
-            // Init fillViewModel for autofill and dropdowns
-            var fillApplication = new EditApplicantViewModel();
-
-            // Init the course dropdown list
-            fillApplication.courseSelectList = new List<SelectListItem>();
-            // Init the university dropdown list
-            fillApplication.uniSelectList = new List<SelectListItem>();
-
-            // Loop through the course and add them to the viewmodel
-            foreach (var course in courses)
-            {
-                fillApplication.courseSelectList.Add(new SelectListItem { Text = course.courseName, Value = course.courseID.ToString() });
-            }
-
-            // Loop through the universitys results and add them to the viewmodel
-            foreach (var uni in universities)
-            {
-                fillApplication.uniSelectList.Add(new SelectListItem { Text = uni.uniName, Value = uni.uniID.ToString() });
-            }
-
-            return fillApplication;
-        }
-
+        // GET Display for Displaying all applicant to the Administrator
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Display()
         {
             var aArr = from v1 in _db.applicant
