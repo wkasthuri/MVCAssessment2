@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Hosting;
 using MVCAssessment2.Models;
 using MVCAssessment2.ViewModels;
 
@@ -210,7 +211,8 @@ namespace MVCAssessment2.Controllers
                            coverLetter = v1.coverLetter,
                            courseName = v2.courseName,
                            universityName = v3.universityName,
-                           Email = v4.Email
+                           Email = v4.Email,
+                           PhoneNumber = v4.PhoneNumber
 
                        };
 
@@ -222,7 +224,7 @@ namespace MVCAssessment2.Controllers
                 Applicant a1 = new Applicant { applicantID = a.applicantID, firstName = a.firstName, lastName = a.lastName, dateOfBirth = a.dateOfBirth, gpa = a.gpa, coverLetter = a.coverLetter };
                 Courses r1 = new Courses { courseID = a.courseID, courseName = a.courseName };
                 Universities u1 = new Universities { uniID = a.uniID, universityName = a.universityName };
-                AspNetUsers n1 = new AspNetUsers { Id = a.Id, Email = a.Email };
+                AspNetUsers n1 = new AspNetUsers { Id = a.Id, Email = a.Email, PhoneNumber = a.PhoneNumber };
                 Combined c = new Combined { applicant = a1, courses = r1, universities = u1, aspNetUsers = n1 };
 
                 cList.Add(c);
@@ -234,7 +236,7 @@ namespace MVCAssessment2.Controllers
 
 
         [HttpGet]
-        public IActionResult Edit(string applicantID)
+        public IActionResult Edit(int applicantID)
         {
             var userApplicant = from applicant in _db.applicant
                                 join user in _db.aspNetUsers on applicant.Id equals user.Id
@@ -250,7 +252,8 @@ namespace MVCAssessment2.Controllers
                                     courseID = applicant.courseID,
                                     uniID = applicant.uniID,
                                     Id = user.Id,
-                                    Email = user.Email
+                                    Email = user.Email,
+                                    PhoneNumber = user.PhoneNumber
 
                                 };
 
@@ -293,7 +296,7 @@ namespace MVCAssessment2.Controllers
             foreach (var b in userApplicant)
             {
                 Applicant b1 = new Applicant { applicantID = b.applicantID, firstName = b.firstName, lastName = b.lastName, dateOfBirth = b.dateOfBirth, gpa = b.gpa, coverLetter = b.coverLetter, uniID = b.uniID, courseID = b.courseID };
-                AspNetUsers n1 = new AspNetUsers { Id = b.Id, Email = b.Email };
+                AspNetUsers n1 = new AspNetUsers { Id = b.Id, Email = b.Email, PhoneNumber = b.PhoneNumber };
                 fillApplication.applicantID = b1.applicantID;
                 fillApplication.firstName = b1.firstName;
                 fillApplication.lastName = b1.lastName;
@@ -304,6 +307,7 @@ namespace MVCAssessment2.Controllers
                 fillApplication.uniID = b1.uniID;
                 fillApplication.Id = n1.Id;
                 fillApplication.Email = n1.Email;
+                fillApplication.PhoneNumber = n1.PhoneNumber;
 
             }
 
@@ -317,7 +321,9 @@ namespace MVCAssessment2.Controllers
         {
             // Get the currently logged in users email
             var user = await userManager.FindByNameAsync(User.Identity.Name);
-            //Console.WriteLine(user.Id);
+            user.PhoneNumber = applicant.PhoneNumber;
+            await userManager.UpdateAsync(user);
+            //Console.WriteLine(applicant.PhoneNumber);
             applicant.Id = user.Id;
             _db.Entry(applicant).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             _db.SaveChanges();
@@ -325,5 +331,48 @@ namespace MVCAssessment2.Controllers
 
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Delete()
+        {
+            // Get the currently logged in users email
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+            //Console.WriteLine(user.Id);
+            var a = from applicant in _db.applicant
+                    where applicant.Id == user.Id
+                    select new
+                            {
+                                applicantID = applicant.applicantID,
+                                firstName = applicant.firstName,
+                                lastName = applicant.lastName,
+                                dateOfBirth = applicant.dateOfBirth,
+                                gpa = applicant.gpa,
+                                courseID = applicant.courseID,
+                                uniID = applicant.uniID,
+                                Id = user.Id,
+                                PhoneNumber = user.PhoneNumber
+                            };
+            Applicant deleteApplicant = new Applicant();
+            
+            foreach (var item in a)
+            {
+                deleteApplicant.applicantID = item.applicantID;
+                deleteApplicant.firstName = item.firstName;
+                deleteApplicant.lastName = item.lastName;
+                deleteApplicant.dateOfBirth = item.dateOfBirth;
+                deleteApplicant.gpa = item.gpa;
+                deleteApplicant.courseID = item.courseID;
+                deleteApplicant.uniID = item.uniID;
+                deleteApplicant.Id = item.Id;
+            };
+            //Console.WriteLine(deleteApplicant);
+            
+            _db.Entry(deleteApplicant).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+
+            _db.SaveChanges();
+            return RedirectToAction("Display");
+
+        }
+
+        
     }
 }
