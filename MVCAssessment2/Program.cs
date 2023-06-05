@@ -21,9 +21,11 @@ builder.Services.AddDbContext<CSIROContext>(options =>
 });
 
 // Create a user
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+    {
+        options.SignIn.RequireConfirmedEmail = true;    //add email confirmation
+    })
     .AddEntityFrameworkStores<CSIROContext>()
-    //.AddEntityFrameworkStores<ApplicantDataContext>()
     .AddDefaultTokenProviders();
 
 //APIs for registering session management
