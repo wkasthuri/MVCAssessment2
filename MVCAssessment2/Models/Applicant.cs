@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVCAssessment2.Models
 {
@@ -22,10 +23,13 @@ namespace MVCAssessment2.Models
         [Display(Name = "GPA")]
         public double gpa { get; set; }
 
+        [Display(Name = "University Name")]
         public int uniID { get; set; }
 
+        [Display(Name = "Course Name")]
         public int courseID { get; set; }
 
+        [Display(Name = "Cover Letter (Optional)")]
         public string? coverLetter { get; set; }
 
         public string? Id { get; set; }

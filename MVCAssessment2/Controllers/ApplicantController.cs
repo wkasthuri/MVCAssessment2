@@ -1,21 +1,28 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using MVCAssessment2.Models;
 using MVCAssessment2.ViewModels;
+using System.Data;
 
 namespace MVCAssessment2.Controllers
 {
     public class ApplicantController : Controller
     {
-        public Applicant a { get; set; }
-
+        //public Applicant a { get; set; }
         private UserManager<IdentityUser> userManager { get; }
+
+        //public CreateApplicantViewModel b { get; set; }
 
         private readonly CSIROContext _db;
 
         public ApplicantController(CSIROContext db, UserManager<IdentityUser> _userManager)
         {
+
             _db = db;
             this.userManager = _userManager;
         }
@@ -196,30 +203,37 @@ namespace MVCAssessment2.Controllers
 
                        select new
                        {
-                           firstName1 = v1.firstName,
-                           lastName1 = v1.lastName,
-                           dateOfBirth1 = v1.dateOfBirth,
-                           gpa1 = v1.gpa,
-                           courseName1 = v2.courseName,
-                           universityName1 = v3.universityName,
+                           Id = v4.Id,
+                           applicantID = v1.applicantID,
+                           courseID = v2.courseID,
+                           uniID = v3.uniID,
+                           firstName = v1.firstName,
+                           lastName = v1.lastName,
+                           dateOfBirth = v1.dateOfBirth,
+                           gpa = v1.gpa,
+                           coverLetter = v1.coverLetter,
+                           courseName = v2.courseName,
+                           universityName = v3.universityName,
                            Email = v4.Email
 
                        };
 
-
+            //Console.WriteLine("test");
             List<Combined> cList = new List<Combined>();
 
             foreach (var a in aArr)
             {
-                Applicant a1 = new Applicant { firstName = a.firstName1, lastName = a.lastName1, dateOfBirth = a.dateOfBirth1, gpa = a.gpa1 };
-                Courses r1 = new Courses { courseName = a.courseName1 };
-                Universities u1 = new Universities { universityName = a.universityName1 };
-                AspNetUsers n1 = new AspNetUsers { Email = a.Email };
+                Applicant a1 = new Applicant { applicantID= a.applicantID, firstName = a.firstName, lastName = a.lastName, dateOfBirth = a.dateOfBirth, gpa = a.gpa, coverLetter = a.coverLetter };
+                Courses r1 = new Courses { courseID= a.courseID, courseName = a.courseName };
+                Universities u1 = new Universities { uniID=a.uniID, universityName = a.universityName };
+                AspNetUsers n1 = new AspNetUsers { Id=a.Id, Email = a.Email };
                 Combined c = new Combined { applicant = a1, courses = r1, universities = u1, aspNetUsers = n1 };
 
                 cList.Add(c);
             }
+            Console.WriteLine("test");
             return View(cList);
+           
         }
         
     }

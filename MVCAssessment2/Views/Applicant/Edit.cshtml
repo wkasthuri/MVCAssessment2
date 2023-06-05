@@ -2,9 +2,48 @@
 
 <fieldset>
 
+    @using (Html.BeginForm())
+    {
+        @*<font color="red">@Html.ValidationSummary()</font>*@
+        <table class="table table-striped">
+            <tr><td></td><td>@Html.EditorFor(m => m.applicantID, new { htmlAttributes = new { type = "hidden" } })</td><td></td></tr>
+            <tr><td>@Html.LabelFor(m => m.firstName)</td><td>@Html.EditorFor(m => m.firstName)</td><td></td></tr>
+            <tr><td>@Html.LabelFor(m => m.lastName)</td><td>@Html.EditorFor(m => m.lastName)</td><td></td></tr>
+            <tr><td>@Html.LabelFor(m => m.dateOfBirth)</td><td>@Html.EditorFor(m => m.dateOfBirth)</td><td></td></tr>
+            <tr><td>@Html.LabelFor(m => m.Email)</td><td>@Html.EditorFor(m => m.Email)</td><td>@Html.ValidationMessageFor(m => m.Email)</td></tr>
+
+             <tr>
+                <td>@Html.LabelFor(m => m.uniID)</td>
+                <td>@Html.DropDownListFor(m => m.uniID, new SelectList(Model.uniSelectList, "Value", "Text", Model.uniID), "Select country", new{@id="uniID"})</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(m => m.courseID)</td>
+                <td>@Html.DropDownListFor(m => m.courseID, new SelectList(Model.courseSelectList, "Value", "Text", Model.courseID), "Select country", new{@id="courseID"})</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>@Html.LabelFor(m => m.coverLetter)</td>
+                <td><textarea id="@Html.IdFor(m => m.coverLetter)" name="@Html.NameFor(m => m.coverLetter)" class="form-control">@Model.coverLetter</textarea></td>
+                <td></td>
+            </tr>
+            <tr><td>@Html.LabelFor(m => m.gpa)</td><td>@Html.EditorFor(m => m.gpa)</td><td>@Html.ValidationMessageFor(m => m.gpa)</td></tr>
+            
+            <tr><td></td><td><button class="btn btn-primary btn-lg" type="submit">Edit</button></td></tr>
+
+        </table>
+
+    }
+
+
+    @*
+    //other method
     <form method="POST">
-        @*<div asp-validation-summary="All" class="text-danger"></div>*@
-        <label asp-for="applicantID">Email</label>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <label asp-for="applicantID">Applicant ID</label>
         <input asp-for="applicantID" class="form-control" />
 
         <label asp-for="Email">Email</label>
@@ -32,9 +71,9 @@
         <textarea asp-for="coverLetter" rows="5" class="form-control"></textarea>
 
         <div class="mx-auto" style="width: 200px">
-            <button type="submit" class="btn btn-primary my-2">Submit Application</button>
+            <button type="submit" class="btn btn-primary my-2">Edit</button>
         </div>
     </form>
-
+    *@
 
 </fieldset>

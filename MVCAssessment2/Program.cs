@@ -21,9 +21,11 @@ builder.Services.AddDbContext<CSIROContext>(options =>
 });
 
 // Create a user
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+    {
+        options.SignIn.RequireConfirmedEmail = true;    //add email confirmation
+    })
     .AddEntityFrameworkStores<CSIROContext>()
-    //.AddEntityFrameworkStores<ApplicantDataContext>()
     .AddDefaultTokenProviders();
 
 //APIs for registering session management
@@ -59,9 +61,9 @@ app.MapControllerRoute(
     name: "default",
     //pattern: "{controller=Home}/{action=Index}/{id?}");
 
-    //pattern: "{controller=Applicant}/{action=Display}/{id?}");
-    pattern: "{controller=Applicant}/{action=Add}/{id?}");
-
+    //pattern: "{controller=Applicant}/{action=Display}");
+    pattern: "{controller=Applicant}/{action=Display}/{id?}");
+    
     //pattern: "{controller=Account}/{action=Register}/{id?}");
     //pattern: "{controller=Account}/{action=Login}/{id?}");
 
