@@ -1,80 +1,88 @@
 ﻿@model MVCAssessment2.ViewModels.EditApplicantViewModel
 
-<fieldset>
+<div class="border rounded my-3">
+    <h2 class="text-center mx-auto my-3">Edit Application</h2>
 
-    @using (Html.BeginForm())
-    {
-        @*<font color="red">@Html.ValidationSummary()</font>*@
-        <table class="table table-striped">
-            <tr><td></td><td>@Html.EditorFor(m => m.applicantID, new { htmlAttributes = new { type = "hidden" } })</td><td></td></tr>
-            <tr><td>@Html.LabelFor(m => m.firstName)</td><td>@Html.EditorFor(m => m.firstName)</td><td></td></tr>
-            <tr><td>@Html.LabelFor(m => m.lastName)</td><td>@Html.EditorFor(m => m.lastName)</td><td></td></tr>
-            <tr><td>@Html.LabelFor(m => m.dateOfBirth)</td><td>@Html.EditorFor(m => m.dateOfBirth)</td><td></td></tr>
-            @*<tr><td>@Html.LabelFor(m => m.Email)</td><td>@Html.EditorFor(m => m.Email)</td><td>@Html.ValidationMessageFor(m => m.Email)</td></tr>*@
-            <tr><td>@Html.LabelFor(m => m.PhoneNumber)</td><td>@Html.EditorFor(m => m.PhoneNumber)</td><td></td></tr>
+    <fieldset>
 
-            <tr>
-                <td>@Html.LabelFor(m => m.uniID)</td>
-                <td>@Html.DropDownListFor(m => m.uniID, new SelectList(Model.uniSelectList, "Value", "Text", Model.uniID), new{@id="uniID"})</td>
-                <td></td>
-            </tr>
+        @using (Html.BeginForm())
+        {
+            @*<font color="red">@Html.ValidationSummary()</font>*@
+            <table class="table table-striped">
+                <tr><td></td><td>@Html.EditorFor(m => m.applicantID, new { htmlAttributes = new { type = "hidden" } })</td><td></td></tr>
+                <tr><td>@Html.LabelFor(m => m.firstName)</td><td>@Html.EditorFor(m => m.firstName)</td><td></td></tr>
+                <tr><td>@Html.LabelFor(m => m.lastName)</td><td>@Html.EditorFor(m => m.lastName)</td><td></td></tr>
+                <tr><td>@Html.LabelFor(m => m.dateOfBirth)</td><td>@Html.EditorFor(m => m.dateOfBirth)</td><td></td></tr>
+                @*<tr><td>@Html.LabelFor(m => m.Email)</td><td>@Html.EditorFor(m => m.Email)</td><td>@Html.ValidationMessageFor(m => m.Email)</td></tr>*@
+                <tr><td>@Html.LabelFor(m => m.PhoneNumber)</td><td>@Html.EditorFor(m => m.PhoneNumber)</td><td></td></tr>
 
-            <tr>
-                <td>@Html.LabelFor(m => m.courseID)</td>
-                <td>@Html.DropDownListFor(m => m.courseID, new SelectList(Model.courseSelectList, "Value", "Text", Model.courseID), new{@id="courseID"})</td>
-                <td></td>
-            </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.uniID)</td>
+                    <td>@Html.DropDownListFor(m => m.uniID, new SelectList(Model.uniSelectList, "Value", "Text", Model.uniID), new{@id="uniID"})</td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <td>@Html.LabelFor(m => m.coverLetter)</td>
-                <td><textarea id="@Html.IdFor(m => m.coverLetter)" name="@Html.NameFor(m => m.coverLetter)" class="form-control">@Model.coverLetter</textarea></td>
-                <td></td>
-            </tr>
-            <tr><td>@Html.LabelFor(m => m.gpa)</td><td>@Html.EditorFor(m => m.gpa)</td><td>@Html.ValidationMessageFor(m => m.gpa)</td></tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.courseID)</td>
+                    <td>@Html.DropDownListFor(m => m.courseID, new SelectList(Model.courseSelectList, "Value", "Text", Model.courseID), new{@id="courseID"})</td>
+                    <td></td>
+                </tr>
 
-            <tr><td></td><td><button class="btn btn-primary btn-lg" type="submit">Save Changes</button></td></tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.coverLetter)</td>
+                    <td><textarea id="@Html.IdFor(m => m.coverLetter)" name="@Html.NameFor(m => m.coverLetter)" class="form-control">@Model.coverLetter</textarea></td>
+                    <td></td>
+                </tr>
+                <tr><td>@Html.LabelFor(m => m.gpa)</td><td>@Html.EditorFor(m => m.gpa)</td><td>@Html.ValidationMessageFor(m => m.gpa)</td></tr>
 
-        </table>
+                @*<tr><td></td><td><button class="btn btn-primary btn-lg" type="submit">Save Changes</button></td></tr>*@
 
-    }
+            </table>
+            
+            <div class="text-center mx-auto">
+                <button class="btn btn-primary btn-lg my-2" type="submit">Save Changes</button>
+            </div>
+            
+        }
 
 
-    @*
-    //other method
-    <form method="POST">
-    <div asp-validation-summary="All" class="text-danger"></div>
+        @*
+        //other method
+        <form method="POST">
+        <div asp-validation-summary="All" class="text-danger"></div>
 
-    <label asp-for="applicantID">Applicant ID</label>
-    <input asp-for="applicantID" class="form-control" />
+        <label asp-for="applicantID">Applicant ID</label>
+        <input asp-for="applicantID" class="form-control" />
 
-    <label asp-for="Email">Email</label>
-    <input asp-for="Email" class="form-control" />
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
 
-    <label asp-for="firstName">First Name</label>
-    <input asp-for="firstName" class="form-control" />
+        <label asp-for="firstName">First Name</label>
+        <input asp-for="firstName" class="form-control" />
 
-    <label asp-for="lastName">Last Name</label>
-    <input asp-for="lastName" class="form-control" />
+        <label asp-for="lastName">Last Name</label>
+        <input asp-for="lastName" class="form-control" />
 
-    <label asp-for="dateOfBirth">Date Of Birth</label>
-    <input asp-for="dateOfBirth" class="form-control" />
+        <label asp-for="dateOfBirth">Date Of Birth</label>
+        <input asp-for="dateOfBirth" class="form-control" />
 
-    <label asp-for="gpa">GPA</label>
-    <input asp-for="gpa" class="form-control" />
+        <label asp-for="gpa">GPA</label>
+        <input asp-for="gpa" class="form-control" />
 
-    <label asp-for="courseID">Qualification</label>
-    <select asp-for="courseID" class="form-select" asp-items="Model.courseSelectList"></select>
+        <label asp-for="courseID">Qualification</label>
+        <select asp-for="courseID" class="form-select" asp-items="Model.courseSelectList"></select>
 
-    <label asp-for="uniID">University</label>
-    <select asp-for="uniID" class="form-select" asp-items="Model.uniSelectList"></select>
+        <label asp-for="uniID">University</label>
+        <select asp-for="uniID" class="form-select" asp-items="Model.uniSelectList"></select>
 
-    <label asp-for="coverLetter">Cover Letter (Optional)</label>
-    <textarea asp-for="coverLetter" rows="5" class="form-control"></textarea>
+        <label asp-for="coverLetter">Cover Letter (Optional)</label>
+        <textarea asp-for="coverLetter" rows="5" class="form-control"></textarea>
 
-    <div class="mx-auto" style="width: 200px">
-    <button type="submit" class="btn btn-primary my-2">Edit</button>
-    </div>
-    </form>
-    *@
+        <div class="mx-auto" style="width: 200px">
+        <button type="submit" class="btn btn-primary my-2">Edit</button>
+        </div>
+        </form>
+        *@
 
-</fieldset>
+    </fieldset>
+</div>
