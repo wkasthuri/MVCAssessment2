@@ -13,6 +13,11 @@ html {
   min-height: 90%;
 }
 
+pre {
+    font-size: 16px;
+    font-family: inherit;
+}
+
 body {
   margin-bottom: 60px;
 }

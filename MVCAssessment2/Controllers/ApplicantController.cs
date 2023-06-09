@@ -117,7 +117,7 @@ namespace MVCAssessment2.Controllers
 
         // GET DisplayOne, for displaying one user for Admin
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult DisplayOne(int applicantID)
         {
             Console.WriteLine("Logging appId");
@@ -167,19 +167,6 @@ namespace MVCAssessment2.Controllers
                 university.universityName = item.universityName;
                 user.Email = item.Email;
                 user.PhoneNumber= item.PhoneNumber;
-
-                //combined.applicant.applicantID = item.applicantID;
-                //combined.applicant.firstName = item.firstName;
-                //combined.applicant.lastName = item.lastName;
-                //combined.applicant.dateOfBirth = item.dateOfBirth;
-                //combined.applicant.gpa = item.gpa;
-                //combined.applicant.coverLetter = item.coverLetter;
-                //combined.courses.courseID = item.courseID;
-                //combined.courses.courseName = item.courseName;
-                //combined.universities.uniID = item.uniID;
-                //combined.universities.universityName = item.universityName;
-                //combined.aspNetUsers.Email = item.Email;
-                //combined.aspNetUsers.PhoneNumber = item.PhoneNumber;
             }
             Combined combined = new Combined { applicant = applicantDetails, courses = course, universities = university, aspNetUsers = user };
 
@@ -187,26 +174,44 @@ namespace MVCAssessment2.Controllers
             return View(combined);
         }
 
-        /*
-        public async Task<IActionResult> OnGetHasUserApplied()
+        // GET DisplayOne, for displaying one user for Admin
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Invitation(int applicantID)
         {
-            // Get the currently logged in users email
-            var loggedUser = await userManager.FindByNameAsync(User.Identity.Name);
+            var oneApplicant = from applicant in _db.applicant
+                               join aspNetUsers in _db.aspNetUsers on applicant.Id equals aspNetUsers.Id
+                               where applicant.applicantID == applicantID
 
-            var user = from applicant in _db.applicant where applicant.Id == loggedUser.Id
-                       select applicant;
+                               select new
+                               {
+                                   firstName = applicant.firstName,
+                                   lastName = applicant.lastName,
+                                   Email = aspNetUsers.Email,
+                               };
 
-            var hasUserApplied = "";
+            Applicant applicantDetails = new Applicant();
+            AspNetUsers user = new AspNetUsers();
 
-            foreach (var item in user)
+            foreach (var item in oneApplicant)
             {
-                Console.WriteLine(item.Id);
-                //hasUserApplied = item.Id;
+                applicantDetails.firstName = item.firstName;
+                applicantDetails.lastName = item.lastName;
+                user.Email = item.Email;
             }
 
-            return View();
+            // Get the currently logged in users email and format it into just a name for the email
+            var admin = await userManager.FindByNameAsync(User.Identity.Name);
+            var adminName = admin.Email;
+            adminName = adminName.Remove(adminName.LastIndexOf("@"));
+            adminName = char.ToUpper(adminName[0]) + adminName.Substring(1);
+
+            Console.WriteLine($"Logging admins name: {adminName}");
+
+            InvitationViewModel invitation = new InvitationViewModel { applicant = applicantDetails, aspNetUsers = user, adminName = adminName };
+
+            return View(invitation);
         }
-        */
 
         [HttpGet]
         public async Task<IActionResult> Edit()
@@ -254,8 +259,6 @@ namespace MVCAssessment2.Controllers
             }
             return View(applicantDetails);
         }
-
-
 
         [HttpPost]
         public async Task<IActionResult> Edit(EditApplicantViewModel applicant)
