@@ -115,6 +115,98 @@ namespace MVCAssessment2.Controllers
 
         }
 
+        // GET DisplayOne, for displaying one user for Admin
+        [HttpGet]
+        //[Authorize(Roles = "Admin")]
+        public IActionResult DisplayOne(int applicantID)
+        {
+            Console.WriteLine("Logging appId");
+            Console.WriteLine(applicantID);
+
+            
+            var oneApplicant = from applicant in _db.applicant
+                       join courses in _db.courses on applicant.courseID equals courses.courseID
+                       join universities in _db.universities on applicant.uniID equals universities.uniID
+                       join aspNetUsers in _db.aspNetUsers on applicant.Id equals aspNetUsers.Id
+                       where applicant.applicantID == applicantID
+
+                               select new
+                       {
+                           applicantID = applicant.applicantID,
+                           firstName = applicant.firstName,
+                           lastName = applicant.lastName,
+                           dateOfBirth = applicant.dateOfBirth,
+                           gpa = applicant.gpa,
+                           coverLetter = applicant.coverLetter,
+                           courseID = applicant.courseID,
+                           courseName = courses.courseName,
+                           uniID = applicant.uniID,
+                           universityName = universities.universityName,
+                           Email = aspNetUsers.Email,
+                           PhoneNumber = aspNetUsers.PhoneNumber
+                       };
+
+            Applicant applicantDetails = new Applicant();
+            Courses course = new Courses();
+            Universities university = new Universities();
+            AspNetUsers user = new AspNetUsers();
+            Console.WriteLine(oneApplicant);
+
+            foreach (var item in oneApplicant)
+            {
+                Console.WriteLine(item.applicantID);
+                applicantDetails.applicantID = item.applicantID;
+                applicantDetails.firstName = item.firstName;
+                applicantDetails.lastName = item.lastName;
+                applicantDetails.dateOfBirth = item.dateOfBirth;
+                applicantDetails.gpa = item.gpa;
+                applicantDetails.coverLetter = item.coverLetter;
+                course.courseID = item.courseID;
+                course.courseName = item.courseName;
+                university.uniID = item.uniID;
+                university.universityName = item.universityName;
+                user.Email = item.Email;
+                user.PhoneNumber= item.PhoneNumber;
+
+                //combined.applicant.applicantID = item.applicantID;
+                //combined.applicant.firstName = item.firstName;
+                //combined.applicant.lastName = item.lastName;
+                //combined.applicant.dateOfBirth = item.dateOfBirth;
+                //combined.applicant.gpa = item.gpa;
+                //combined.applicant.coverLetter = item.coverLetter;
+                //combined.courses.courseID = item.courseID;
+                //combined.courses.courseName = item.courseName;
+                //combined.universities.uniID = item.uniID;
+                //combined.universities.universityName = item.universityName;
+                //combined.aspNetUsers.Email = item.Email;
+                //combined.aspNetUsers.PhoneNumber = item.PhoneNumber;
+            }
+            Combined combined = new Combined { applicant = applicantDetails, courses = course, universities = university, aspNetUsers = user };
+
+            Console.WriteLine(combined.applicant.firstName);
+            return View(combined);
+        }
+
+        /*
+        public async Task<IActionResult> OnGetHasUserApplied()
+        {
+            // Get the currently logged in users email
+            var loggedUser = await userManager.FindByNameAsync(User.Identity.Name);
+
+            var user = from applicant in _db.applicant where applicant.Id == loggedUser.Id
+                       select applicant;
+
+            var hasUserApplied = "";
+
+            foreach (var item in user)
+            {
+                Console.WriteLine(item.Id);
+                //hasUserApplied = item.Id;
+            }
+
+            return View();
+        }
+        */
 
         [HttpGet]
         public async Task<IActionResult> Edit()
