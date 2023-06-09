@@ -39,17 +39,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Sign Out</a>
                                 </li>
-                            @if (!User.IsInRole("Admin"))
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Edit">Profile</a>
-                                </li>
                             }
-                            } else
+                            else
                             {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Sign In</a>
                                 </li>
+                            }
+                            
+                            @if (User.IsInRole("Applicant"))
+                            {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Applicant" asp-action="Edit">Profile</a>
+                            </li>
                             }
                             
                         </ul>
