@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace MVCAssessment2.Models
 {
@@ -13,6 +14,8 @@ namespace MVCAssessment2.Models
         public DbSet<Universities> universities { get; set; }
 
         public DbSet<AspNetUsers> aspNetUsers { get; set; }
+
+        public DbSet<GPA> gpa { get; set; }
 
         public CSIROContext(DbContextOptions<CSIROContext> options): base(options)
         {
