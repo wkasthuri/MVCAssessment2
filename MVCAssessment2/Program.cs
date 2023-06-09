@@ -5,16 +5,24 @@ using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+
 // Configuration Root
 IConfigurationRoot configuration; //normal variable
 configuration = new ConfigurationBuilder().AddJsonFile("./config.json").Build();
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+/*
+// Configuration Root
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("config.json")
+    .Build();
+*/
 
 // Add the connection string
 builder.Services.AddDbContext<CSIROContext>(options =>
-//builder.Services.AddDbContext<ApplicantDataContext>(options =>
 {
     var connectionString = configuration.GetConnectionString("DBConnection");
     options.UseSqlServer(connectionString);
@@ -60,19 +68,21 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-    //pattern: "{controller=Applicant}/{action=DisplayOne}/{id?}");
-    //pattern: "{controller=Applicant}/{action=Add}/{id?}");
-    //pattern: "{controller=Applicant}/{action=Edit}/{id?}");
-    //pattern: "{controller=Applicant}/{action=Delete}/{id?}");
+//pattern: "{controller=Applicant}/{action=DisplayOne}/{id?}");
+//pattern: "{controller=Applicant}/{action=Add}/{id?}");
+//pattern: "{controller=Applicant}/{action=Edit}/{id?}");
+//pattern: "{controller=Applicant}/{action=Delete}/{id?}");
 
-    //pattern: "{controller=Account}/{action=Register}/{id?}");
-    //pattern: "{controller=Account}/{action=Login}/{id?}");
+//pattern: "{controller=Account}/{action=Register}/{id?}");
+//pattern: "{controller=Account}/{action=Login}/{id?}");
 
-    //pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
-    //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
+//pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
+//pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
-    //pattern: "{controller=Application}/{action=Successful}/{id?}");
+//pattern: "{controller=Application}/{action=Successful}/{id?}");
+
+
+// Access the "MinimumGPA" value
+var minimumGPA = configuration.GetValue<double>("MinimumGPA");
 
 app.Run();
-
-// Package test

@@ -1,5 +1,24 @@
 ﻿@model MVCAssessment2.ViewModels.ApplicantViewModel
 
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var modelState in ViewData.ModelState.Values)
+        {
+            foreach (var error in modelState.Errors)
+            {
+                <span>@error.ErrorMessage</span>
+
+                <br />
+            }
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <span>@TempData["ErrorMessage"]</span>
+        }
+    </div>
+}
+
 <div class="row justify-content-center my-3">
 
     <div class="col-md-8 border rounded">

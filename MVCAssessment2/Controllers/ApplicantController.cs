@@ -63,6 +63,12 @@ namespace MVCAssessment2.Controllers
             // Check that the data being submitted is valid
             if (!ModelState.IsValid) return View(fillApplication);
 
+            if (applicant.gpa < 3.0)
+            {
+                ModelState.AddModelError("gpa", "Your GPA should be greater than or equal to 3.0");
+                //TempData["ErrorMessage"] = "Your GPA should be greater than or equal to 3.0";
+                return View(fillApplication);
+            }
 
             _db.applicant.Add(applicant);
             _db.SaveChanges();
@@ -316,5 +322,6 @@ namespace MVCAssessment2.Controllers
             _db.SaveChanges();
             return RedirectToAction("Display");
         }
+        
     }
 }
