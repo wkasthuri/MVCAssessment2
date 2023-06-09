@@ -1,8 +1,17 @@
 ﻿@model IEnumerable<MVCAssessment2.Models.Combined>
 
     <div class="border rounded my-3">
-    <h2 class="text-center mx-auto my-3">Applications</h2>
+    <h2 class="text-center mx-auto my-3">Applicants</h2>
 
+    
+    @using (Html.BeginForm("Display", "Applicant", FormMethod.Get))
+    {
+        <div class="mb-3">
+            <input type="text" name="searchFirstName" id="searchFirstName" class="form-control">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    }
+  
     <table class="table table-striped mb-0 border="1">
 
         <tr>

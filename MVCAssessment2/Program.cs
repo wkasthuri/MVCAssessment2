@@ -66,10 +66,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    //pattern: "{controller=Home}/{action=Index}/{id?}");
 
 //pattern: "{controller=Applicant}/{action=DisplayOne}/{id?}");
-//pattern: "{controller=Applicant}/{action=Add}/{id?}");
+pattern: "{controller=Applicant}/{action=Add}/{id?}");
 //pattern: "{controller=Applicant}/{action=Edit}/{id?}");
 //pattern: "{controller=Applicant}/{action=Delete}/{id?}");
 
@@ -83,6 +83,6 @@ app.MapControllerRoute(
 
 
 // Access the "MinimumGPA" value
-var minimumGPA = configuration.GetValue<double>("MinimumGPA");
+//var minimumGPA = configuration.GetValue<double>("MinimumGPA");
 
 app.Run();
