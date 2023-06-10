@@ -11,6 +11,7 @@ namespace MVCAssessment2.Models
 
         public string NormalizedUserName { get; set; }
 
+        [Required]
         public string Email { get; set; }
 
         public string NormalizedEmail { get; set; }
@@ -23,6 +24,7 @@ namespace MVCAssessment2.Models
 
         public string ConcurrencyStamp { get; set; }
 
+        [Required]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 

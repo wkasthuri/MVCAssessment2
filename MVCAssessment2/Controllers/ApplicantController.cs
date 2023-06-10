@@ -84,7 +84,7 @@ namespace MVCAssessment2.Controllers
                        join v2 in _db.courses on v1.courseID equals v2.courseID
                        join v3 in _db.universities on v1.uniID equals v3.uniID
                        join v4 in _db.aspNetUsers on v1.Id equals v4.Id
-                       orderby v1.gpa 
+                       
                        select new
                        {
                            Id = v4.Id,

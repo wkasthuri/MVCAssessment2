@@ -13,14 +13,6 @@ builder.Services.AddControllersWithViews();
 IConfigurationRoot configuration; //normal variable
 configuration = new ConfigurationBuilder().AddJsonFile("./config.json").Build();
 
-/*
-// Configuration Root
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(builder.Environment.ContentRootPath)
-    .AddJsonFile("config.json")
-    .Build();
-*/
-
 // Add the connection string
 builder.Services.AddDbContext<CSIROContext>(options =>
 {
@@ -80,9 +72,5 @@ pattern: "{controller=Applicant}/{action=Add}/{id?}");
 //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
 //pattern: "{controller=Application}/{action=Successful}/{id?}");
-
-
-// Access the "MinimumGPA" value
-//var minimumGPA = configuration.GetValue<double>("MinimumGPA");
 
 app.Run();
