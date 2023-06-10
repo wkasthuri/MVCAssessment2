@@ -443,3 +443,10 @@ D:\MVC_project\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\refint\MVCAssessme
 D:\MVC_project\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.pdb
 D:\MVC_project\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\MVCAssessment2.genruntimeconfig.cache
 D:\MVC_project\MVCAssessment2\MVCAssessment2\obj\Debug\net6.0\ref\MVCAssessment2.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
