@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Hosting;
 using MVCAssessment2.Models;
 using MVCAssessment2.ViewModels;
+using System.Data;
 
 namespace MVCAssessment2.Controllers
 {
@@ -14,13 +15,15 @@ namespace MVCAssessment2.Controllers
         //public Applicant a { get; set; }
 
         private UserManager<IdentityUser> userManager { get; }
+        private SignInManager<IdentityUser> signInManager { get; }
 
         private readonly CSIROContext _db;
 
-        public ApplicantController(CSIROContext db, UserManager<IdentityUser> _userManager)
+        public ApplicantController(CSIROContext db, UserManager<IdentityUser> _userManager, SignInManager<IdentityUser> _signInManager)
         {
             _db = db;
             this.userManager = _userManager;
+            this.signInManager= _signInManager;
         }
 
         public IActionResult Index()
@@ -54,6 +57,9 @@ namespace MVCAssessment2.Controllers
             // Get the currently logged in users email
             var user = await userManager.FindByNameAsync(User.Identity.Name);
 
+            await userManager.AddToRoleAsync(user, "Applicant");
+            await signInManager.RefreshSignInAsync(user);
+
             user.PhoneNumber = applicant.PhoneNumber;
             await userManager.UpdateAsync(user);
 
@@ -66,6 +72,7 @@ namespace MVCAssessment2.Controllers
             if (applicant.gpa < 3.0)
             {
                 ModelState.AddModelError("gpa", "Your GPA should be greater than or equal to 3.0");
+                //TempData["ErrorMessage"] = "Your GPA should be greater than or equal to 3.0";
                 return View(fillApplication);
             }
 
@@ -78,35 +85,29 @@ namespace MVCAssessment2.Controllers
         // GET Display for Displaying all applicant to the Administrator
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public IActionResult Display(string searchFirstName)
+        public IActionResult Display()
         {
-            var aArr = from v1 in _db.applicant
-                       join v2 in _db.courses on v1.courseID equals v2.courseID
-                       join v3 in _db.universities on v1.uniID equals v3.uniID
-                       join v4 in _db.aspNetUsers on v1.Id equals v4.Id
-                       
-                       select new
-                       {
-                           Id = v4.Id,
-                           applicantID = v1.applicantID,
-                           courseID = v2.courseID,
-                           uniID = v3.uniID,
-                           firstName = v1.firstName,
-                           lastName = v1.lastName,
-                           dateOfBirth = v1.dateOfBirth,
-                           gpa = v1.gpa,
-                           coverLetter = v1.coverLetter,
-                           courseName = v2.courseName,
-                           universityName = v3.universityName,
-                           Email = v4.Email,
-                           PhoneNumber = v4.PhoneNumber
-                       };
+            var aArr = (from v1 in _db.applicant
+                        join v2 in _db.courses on v1.courseID equals v2.courseID
+                        join v3 in _db.universities on v1.uniID equals v3.uniID
+                        join v4 in _db.aspNetUsers on v1.Id equals v4.Id
 
-            // Filter the results based on the searchFirstName parameter
-            if (searchFirstName != null)
-            {
-                aArr = aArr.Where(a => a.firstName.Contains(searchFirstName));
-            }
+                        select new
+                        {
+                            Id = v4.Id,
+                            applicantID = v1.applicantID,
+                            courseID = v2.courseID,
+                            uniID = v3.uniID,
+                            firstName = v1.firstName,
+                            lastName = v1.lastName,
+                            dateOfBirth = v1.dateOfBirth,
+                            gpa = v1.gpa,
+                            coverLetter = v1.coverLetter,
+                            courseName = v2.courseName,
+                            universityName = v3.universityName,
+                            Email = v4.Email,
+                            PhoneNumber = v4.PhoneNumber
+                        }).OrderByDescending(v1 => v1.gpa);
 
             //Console.WriteLine("test");
             List<Combined> cList = new List<Combined>();
@@ -121,14 +122,14 @@ namespace MVCAssessment2.Controllers
 
                 cList.Add(c);
             }
-            //Console.WriteLine("test");
+            Console.WriteLine("test");
             return View(cList);
 
         }
 
         // GET DisplayOne, for displaying one user for Admin
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult DisplayOne(int applicantID)
         {
             Console.WriteLine("Logging appId");
@@ -141,7 +142,7 @@ namespace MVCAssessment2.Controllers
                        join aspNetUsers in _db.aspNetUsers on applicant.Id equals aspNetUsers.Id
                        where applicant.applicantID == applicantID
 
-                               select new
+                       select new
                        {
                            applicantID = applicant.applicantID,
                            firstName = applicant.firstName,
@@ -178,19 +179,6 @@ namespace MVCAssessment2.Controllers
                 university.universityName = item.universityName;
                 user.Email = item.Email;
                 user.PhoneNumber= item.PhoneNumber;
-
-                //combined.applicant.applicantID = item.applicantID;
-                //combined.applicant.firstName = item.firstName;
-                //combined.applicant.lastName = item.lastName;
-                //combined.applicant.dateOfBirth = item.dateOfBirth;
-                //combined.applicant.gpa = item.gpa;
-                //combined.applicant.coverLetter = item.coverLetter;
-                //combined.courses.courseID = item.courseID;
-                //combined.courses.courseName = item.courseName;
-                //combined.universities.uniID = item.uniID;
-                //combined.universities.universityName = item.universityName;
-                //combined.aspNetUsers.Email = item.Email;
-                //combined.aspNetUsers.PhoneNumber = item.PhoneNumber;
             }
             Combined combined = new Combined { applicant = applicantDetails, courses = course, universities = university, aspNetUsers = user };
 
@@ -198,26 +186,44 @@ namespace MVCAssessment2.Controllers
             return View(combined);
         }
 
-        /*
-        public async Task<IActionResult> OnGetHasUserApplied()
+        // GET DisplayOne, for displaying one user for Admin
+        [HttpGet]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Invitation(int applicantID)
         {
-            // Get the currently logged in users email
-            var loggedUser = await userManager.FindByNameAsync(User.Identity.Name);
+            var oneApplicant = from applicant in _db.applicant
+                               join aspNetUsers in _db.aspNetUsers on applicant.Id equals aspNetUsers.Id
+                               where applicant.applicantID == applicantID
 
-            var user = from applicant in _db.applicant where applicant.Id == loggedUser.Id
-                       select applicant;
+                               select new
+                               {
+                                   firstName = applicant.firstName,
+                                   lastName = applicant.lastName,
+                                   Email = aspNetUsers.Email,
+                               };
 
-            var hasUserApplied = "";
+            Applicant applicantDetails = new Applicant();
+            AspNetUsers user = new AspNetUsers();
 
-            foreach (var item in user)
+            foreach (var item in oneApplicant)
             {
-                Console.WriteLine(item.Id);
-                //hasUserApplied = item.Id;
+                applicantDetails.firstName = item.firstName;
+                applicantDetails.lastName = item.lastName;
+                user.Email = item.Email;
             }
 
-            return View();
+            // Get the currently logged in users email and format it into just a name for the email
+            var admin = await userManager.FindByNameAsync(User.Identity.Name);
+            var adminName = admin.Email;
+            adminName = adminName.Remove(adminName.LastIndexOf("@"));
+            adminName = char.ToUpper(adminName[0]) + adminName.Substring(1);
+
+            Console.WriteLine($"Logging admins name: {adminName}");
+
+            InvitationViewModel invitation = new InvitationViewModel { applicant = applicantDetails, aspNetUsers = user, adminName = adminName };
+
+            return View(invitation);
         }
-        */
 
         [HttpGet]
         public async Task<IActionResult> Edit()
@@ -265,8 +271,6 @@ namespace MVCAssessment2.Controllers
             }
             return View(applicantDetails);
         }
-
-
 
         [HttpPost]
         public async Task<IActionResult> Edit(EditApplicantViewModel applicant)
@@ -323,8 +327,6 @@ namespace MVCAssessment2.Controllers
             _db.SaveChanges();
             return RedirectToAction("Display");
         }
-
-
         
     }
 }

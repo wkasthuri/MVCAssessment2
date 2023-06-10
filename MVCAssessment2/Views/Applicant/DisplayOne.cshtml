@@ -2,46 +2,53 @@
 
 <div class="row justify-content-center m-3">
 
-    <div class="col-lg-5 border rounded">
+    <div class="col-lg-10 border rounded">
 
         <h2 class="text-center mx-auto mt-3">User Details</h2>
 
-        <div class="mx-auto">
-            <label asp-for="applicant.firstName" class="fw-bold"></label>
-            <p>@Model.applicant.firstName</p>
+        <div class="row">
+            <div class="col-md-3 mx-auto">
+                <label asp-for="applicant.firstName" class="fw-bold"></label>
+                <p>@Model.applicant.firstName</p>
 
-            <label asp-for="applicant.lastName" class="fw-bold"></label>
-            <p>@Model.applicant.lastName</p>
+                <label asp-for="applicant.lastName" class="fw-bold"></label>
+                <p>@Model.applicant.lastName</p>
 
-            <label asp-for="applicant.dateOfBirth" class="fw-bold"></label>
-            <p>@Model.applicant.dateOfBirth</p>
+                <label asp-for="applicant.dateOfBirth" class="fw-bold"></label>
+                <p>@Model.applicant.dateOfBirth</p>
 
-            <label asp-for="applicant.gpa" class="fw-bold"></label>
-            <p>@Model.applicant.gpa</p>
+                <label asp-for="applicant.gpa" class="fw-bold"></label>
+                <p>@Model.applicant.gpa</p>
 
-            <label asp-for="courses.courseName" class="fw-bold"></label>
-            <p>@Model.courses.courseName</p>
+                <label asp-for="courses.courseName" class="fw-bold"></label>
+                <p>@Model.courses.courseName</p>
 
-            <label asp-for="universities.universityName" class="fw-bold"></label>
-            <p>@Model.universities.universityName</p>
+                <label asp-for="universities.universityName" class="fw-bold"></label>
+                <p>@Model.universities.universityName</p>
 
-            <label asp-for="aspNetUsers.Email" class="fw-bold"></label>
-            <p>@Model.aspNetUsers.Email</p>
+                <label asp-for="aspNetUsers.Email" class="fw-bold"></label>
+                <p>@Model.aspNetUsers.Email</p>
 
-            <label asp-for="aspNetUsers.PhoneNumber" class="fw-bold"></label>
-            <p>@Model.aspNetUsers.PhoneNumber</p>
+                <label asp-for="aspNetUsers.PhoneNumber" class="fw-bold"></label>
+                <p>@Model.aspNetUsers.PhoneNumber</p>
 
-            <div class="text-center mx-auto">
-                <button type="submit" class="btn btn-primary justify-content-center my-2 mx-auto" style="width: 180px">
-                    @Html.ActionLink("Generate Invitation Email", "DisplayOne", "Applicant", new {@applicantID= @Model.applicant.applicantID}, new {@class= "text-light text-decoration-none"})
-                </button>
-
-                <div class="mx-auto" style="width: 180px">
-                    <a class="btn btn-primary my-2" style="width: 180px" href="@Url.Action("Display", "Applicant")">Return</a>
-                </div>
             </div>
-            
+
+            <div class="col-md-7 mx-auto">
+                <label class="fw-bold">Cover Letter</label>
+                <p>@Model.applicant.coverLetter</p>
+            </div>
         </div>
+
+        <div class="text-center mx-auto">
+            <button type="submit" class="btn btn-primary justify-content-center my-2 mx-auto" style="width: 180px">
+                @Html.ActionLink("Invite", "Invitation", "Applicant", new {@applicantID= @Model.applicant.applicantID}, new {@class= "text-light text-decoration-none"})
+            </button>
+
+            <div class="mx-auto" style="width: 180px">
+                <a class="btn btn-primary my-2" style="width: 180px" href="@Url.Action("Display", "Applicant")">Return</a>
+            </div>
+        </div> 
 
     </div>
 

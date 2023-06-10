@@ -1,0 +1,33 @@
+﻿@model MVCAssessment2.ViewModels.InvitationViewModel
+
+<div class="row justify-content-center m-3">
+
+    <div class="col-lg-8 border rounded">
+
+        <h2 class="text-center mx-auto mt-3">Invitation Email</h2>
+
+        <label asp-for="aspNetUsers.Email" class="fw-bold"></label>
+        <p>@Model.aspNetUsers.Email</p>
+
+        <label class="fw-bold">Email Body</label>
+        <pre class="">
+Dear @Model.applicant.firstName,
+
+We would like to happily inform you that you have been accepted 
+for the first round of interviews for the Data Science job at CSIRO.
+
+Interview meeting time:
+    23rd October 12pm
+
+You will be emailed a zoom meeting link the day of the interview.
+
+Regards @Model.adminName
+        </pre>
+
+        <div class="mx-auto" style="width: 180px">
+            <a class="btn btn-primary my-2" style="width: 180px" href="@Url.Action("Display", "Applicant")">Return</a>
+        </div>
+
+    </div>
+
+</div>
