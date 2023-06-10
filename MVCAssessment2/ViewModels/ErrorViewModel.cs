@@ -1,4 +1,4 @@
-namespace MVCAssessment2.Models
+﻿namespace MVCAssessment2.ViewModels
 {
     public class ErrorViewModel
     {
