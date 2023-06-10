@@ -15,8 +15,6 @@ namespace MVCAssessment2.Models
 
         public DbSet<AspNetUsers> aspNetUsers { get; set; }
 
-        public DbSet<GPA> gpa { get; set; }
-
         public CSIROContext(DbContextOptions<CSIROContext> options): base(options)
         {
             Database.EnsureCreated();

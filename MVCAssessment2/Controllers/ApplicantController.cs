@@ -108,7 +108,7 @@ namespace MVCAssessment2.Controllers
                            Email = v4.Email,
                            PhoneNumber = v4.PhoneNumber
                        };
-
+            //().OrderByDescending(v1 => v1.gpa);
             // Filter the results based on the searchFirstName parameter
             if (searchFirstName != null)
             {
