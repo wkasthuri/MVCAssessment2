@@ -9,5 +9,7 @@ namespace MVCAssessment2.Models
 
         [Display(Name = "University")]
         public string universityName { get; set; }
+
+        public string? Title { get; set; }
     }
 }

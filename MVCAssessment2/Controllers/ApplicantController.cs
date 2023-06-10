@@ -2,10 +2,15 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Hosting;
 using MVCAssessment2.Models;
 using MVCAssessment2.ViewModels;
 using System.Data;
+using System.Text.Json;
+
+
+
 
 namespace MVCAssessment2.Controllers
 {
@@ -327,6 +332,10 @@ namespace MVCAssessment2.Controllers
             _db.SaveChanges();
             return RedirectToAction("Display");
         }
-        
-    }
+
+
+
+
+        }
 }
+
