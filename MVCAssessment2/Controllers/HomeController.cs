@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVCAssessment2.Models;
 using System.Diagnostics;
+using MVCAssessment2.ViewModels;
 
 namespace MVCAssessment2.Controllers
 {

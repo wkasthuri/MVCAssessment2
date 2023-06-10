@@ -41,7 +41,7 @@ namespace MVCAssessment2.Controllers
                     await System.IO.File.WriteAllTextAsync("confirm.txt", confirmationLink.ToString());
                     ViewBag.ErrorTitle = "user creation is successful";
 
-                    return View("Error"); 
+                    return View("Login"); 
                 }
                 foreach (var e in result.Errors)
                 {
@@ -95,7 +95,7 @@ namespace MVCAssessment2.Controllers
 
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError("", "Invalied Attempt");
+                ModelState.AddModelError("", "Invalid Attempt");
             }
             return View(new LoginViewModel());
         }

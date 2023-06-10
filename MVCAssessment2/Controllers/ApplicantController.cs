@@ -85,29 +85,35 @@ namespace MVCAssessment2.Controllers
         // GET Display for Displaying all applicant to the Administrator
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public IActionResult Display()
+        public IActionResult Display(string searchFirstName)
         {
-            var aArr = (from v1 in _db.applicant
-                        join v2 in _db.courses on v1.courseID equals v2.courseID
-                        join v3 in _db.universities on v1.uniID equals v3.uniID
-                        join v4 in _db.aspNetUsers on v1.Id equals v4.Id
+            var aArr = from v1 in _db.applicant
+                       join v2 in _db.courses on v1.courseID equals v2.courseID
+                       join v3 in _db.universities on v1.uniID equals v3.uniID
+                       join v4 in _db.aspNetUsers on v1.Id equals v4.Id
 
-                        select new
-                        {
-                            Id = v4.Id,
-                            applicantID = v1.applicantID,
-                            courseID = v2.courseID,
-                            uniID = v3.uniID,
-                            firstName = v1.firstName,
-                            lastName = v1.lastName,
-                            dateOfBirth = v1.dateOfBirth,
-                            gpa = v1.gpa,
-                            coverLetter = v1.coverLetter,
-                            courseName = v2.courseName,
-                            universityName = v3.universityName,
-                            Email = v4.Email,
-                            PhoneNumber = v4.PhoneNumber
-                        }).OrderByDescending(v1 => v1.gpa);
+                       select new
+                       {
+                           Id = v4.Id,
+                           applicantID = v1.applicantID,
+                           courseID = v2.courseID,
+                           uniID = v3.uniID,
+                           firstName = v1.firstName,
+                           lastName = v1.lastName,
+                           dateOfBirth = v1.dateOfBirth,
+                           gpa = v1.gpa,
+                           coverLetter = v1.coverLetter,
+                           courseName = v2.courseName,
+                           universityName = v3.universityName,
+                           Email = v4.Email,
+                           PhoneNumber = v4.PhoneNumber
+                       };
+
+            // Filter the results based on the searchFirstName parameter
+            if (searchFirstName != null)
+            {
+                aArr = aArr.Where(a => a.firstName.Contains(searchFirstName));
+            }
 
             //Console.WriteLine("test");
             List<Combined> cList = new List<Combined>();
@@ -122,7 +128,7 @@ namespace MVCAssessment2.Controllers
 
                 cList.Add(c);
             }
-            Console.WriteLine("test");
+            //Console.WriteLine("test");
             return View(cList);
 
         }

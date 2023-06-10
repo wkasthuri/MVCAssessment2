@@ -13,14 +13,6 @@ builder.Services.AddControllersWithViews();
 IConfigurationRoot configuration; //normal variable
 configuration = new ConfigurationBuilder().AddJsonFile("./config.json").Build();
 
-/*
-// Configuration Root
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(builder.Environment.ContentRootPath)
-    .AddJsonFile("config.json")
-    .Build();
-*/
-
 // Add the connection string
 builder.Services.AddDbContext<CSIROContext>(options =>
 {
@@ -66,10 +58,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    //pattern: "{controller=Home}/{action=Index}/{id?}");
 
 //pattern: "{controller=Applicant}/{action=DisplayOne}/{id?}");
-//pattern: "{controller=Applicant}/{action=Add}/{id?}");
+pattern: "{controller=Applicant}/{action=Add}/{id?}");
 //pattern: "{controller=Applicant}/{action=Edit}/{id?}");
 //pattern: "{controller=Applicant}/{action=Delete}/{id?}");
 
@@ -80,9 +72,5 @@ app.MapControllerRoute(
 //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
 //pattern: "{controller=Application}/{action=Successful}/{id?}");
-
-
-// Access the "MinimumGPA" value
-var minimumGPA = configuration.GetValue<double>("MinimumGPA");
 
 app.Run();
