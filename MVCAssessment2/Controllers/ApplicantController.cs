@@ -128,6 +128,12 @@ namespace MVCAssessment2.Controllers
 
                 cList.Add(c);
             }
+
+            //var gpaSortedList = cList.OrderBy(x => x.applicant.gpa).ToList();
+
+            // #### Sort applicants by gpa
+            cList.Sort((x, y) => y.applicant.gpa.CompareTo(x.applicant.gpa));
+
             //Console.WriteLine("test");
             return View(cList);
 

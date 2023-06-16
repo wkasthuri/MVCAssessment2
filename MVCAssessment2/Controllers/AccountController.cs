@@ -41,7 +41,7 @@ namespace MVCAssessment2.Controllers
                     await System.IO.File.WriteAllTextAsync("confirm.txt", confirmationLink.ToString());
                     ViewBag.ErrorTitle = "user creation is successful";
 
-                    return View("Login"); 
+                    return RedirectToAction("Login", "Account"); 
                 }
                 foreach (var e in result.Errors)
                 {

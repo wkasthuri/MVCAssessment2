@@ -450,3 +450,10 @@ D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\n
 D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\MVC_project\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment\MVCAssessment2\MVCAssessment2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

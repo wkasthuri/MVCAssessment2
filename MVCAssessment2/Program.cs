@@ -33,7 +33,7 @@ builder.Services.AddDbContext<CSIROContext>(options =>
 // Create a user
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     {
-        options.SignIn.RequireConfirmedEmail = true;    //add email confirmation
+        options.SignIn.RequireConfirmedEmail = false;    //add email confirmation
     })
     .AddEntityFrameworkStores<CSIROContext>()
     .AddDefaultTokenProviders();
@@ -68,10 +68,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    //pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 //pattern: "{controller=Applicant}/{action=DisplayOne}/{id?}");
-pattern: "{controller=Applicant}/{action=Add}/{id?}");
+//pattern: "{controller=Applicant}/{action=Add}/{id?}");
 //pattern: "{controller=Applicant}/{action=Edit}/{id?}");
 //pattern: "{controller=Applicant}/{action=Delete}/{id?}");
 
@@ -172,7 +172,7 @@ async static void DownloadData()
         // NOW I NEED TO GET THE TITLE OF EACH UNIVERSITY INTO THE "UNIVERSITIES" TABLE 
         // IN THE DATABASE.
 
-        string connectionString = "Server=DESKTOP-TF5S551\\SQLEXPRESS;Database=CSIRO;Integrated Security=True;Encrypt=False";
+        string connectionString = "Server=DESKTOP-A7J167C;Database=CSIRO;Integrated Security=True;Encrypt=False";
         SqlConnection conn;
         conn = new SqlConnection(connectionString);
         conn.Open();
